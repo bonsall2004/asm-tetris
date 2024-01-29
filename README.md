@@ -25,7 +25,7 @@ This is a simple implementation of the classic game Tetris written in x86-64 ass
     cd asm-tetris
     ```
 
-2. Assemble the source code (replace `your_program.asm` with your actual assembly file):
+2. Assemble the source code:
 
     ```bash
     nasm -f elf64 tetris.asm -o tetris.o
@@ -49,4 +49,4 @@ Contributions are welcome! Feel free to open issues or pull requests for any imp
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL License - see the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) file for details.
