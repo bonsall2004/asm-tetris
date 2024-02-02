@@ -109,8 +109,8 @@ print_string:
 ;| Function Name: get_str_len |
 ;|----------------------------|
 ;| Description:               |
-;| Prints a character to the  |
-;| command line               |
+;| Returns the length of a    |
+;| string                     |
 ;|----------------------------|
 ;| Inputs:                    |
 ;| - rsi | string             |
@@ -124,8 +124,9 @@ get_str_len:
 str_len_count_loop:
     cmp byte [rsi + rdx], 0
     je  str_len_done
-    inc rdx                
-    jmp str_len_count_loop           
+    inc rdx
+    jmp str_len_count_loop
+
 str_len_done:
     ret
 
