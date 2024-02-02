@@ -123,9 +123,9 @@ get_str_len:
 
 str_len_count_loop:
     cmp byte [rsi + rdx], 0
-    je  done
+    je  str_len_done
     inc rdx                
-    jmp count_loop           
+    jmp str_len_count_loop           
 str_len_done:
     ret
 
